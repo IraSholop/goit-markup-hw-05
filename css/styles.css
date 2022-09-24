@@ -135,19 +135,20 @@ img {
   margin-right: 50px;
 }
 .icon {
-  transition-property: fill;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon:hover,
 .icon:focus {
-  fill: var(--accent-color);
+  color: var(--accent-color);
 }
 .contact-item {
-  fill: var(--link-coolor);
+  color: var(--accent-color);
 }
 .icon-contact {
   margin-right: 10px;
+  fill: currentColor;
 }
 .contact-link {
   display: flex;
@@ -372,11 +373,13 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--additional-color);
+  
 }
 .team-list-icon {
   display: flex;
   justify-content: center;
   margin-top: 16px;
+ 
 }
 .team-block {
   display: inline-flex;
@@ -384,9 +387,10 @@ img {
   align-items: center;
   width: 44px;
   height: 44px;
-  fill: var(--link-coolor);
+  border-radius: 50px;
+  color: var(--link-coolor);
 
-  transition-property: background-color, border-radius, fill;
+  transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -396,12 +400,12 @@ img {
 .icon-team {
   width: 20px;
   height: 20px;
+  fill: currentColor;
 }
 .team-block:hover,
 .team-block:focus {
   background-color: var(--accent-color);
-  border-radius: 50px;
-  fill: var(--additional-color);
+  color: var(--additional-color);
 }
 .team-name {
   margin: 30px 0 10px;
@@ -433,9 +437,10 @@ img {
   border-radius: 4px;
   width: 170px;
   height: 92px;
-  fill: var(--link-coolor);
+  color: var(--link-coolor);
+  
 
-  transition-property: fill, border;
+  transition-property: color, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -443,12 +448,13 @@ img {
   margin-right: 30px;
 }
 .icon-company {
+  fill: currentColor;
   height: 60px;
   width: 106px;
 }
 .company-block:hover,
 .company-block:focus {
-  fill: var(--accent-color);
+  color: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
 
